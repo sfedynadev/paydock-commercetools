@@ -1,0 +1,19 @@
+{
+  "amountPlanned": {
+    "currencyCode": "USD",
+    "centAmount": 1000
+  },
+  "paymentMethodInfo": {
+    "paymentInterface": "ctp-adyen-integration"
+  },
+  "custom": {
+    "type": {
+      "typeId": "type",
+      "key": "ctp-adyen-integration-web-components-payment-type"
+    },
+    "fields": {
+      "commercetoolsProjectKey": "YOUR_PROJECT_KEY",
+      "adyenMerchantAccount": "YOUR_MERCHANT_ACCOUNT"
+    }
+  }
+}

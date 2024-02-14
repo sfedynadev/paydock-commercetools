@@ -1,0 +1,15 @@
+{
+  "key": "ctp-adyen-integration-payment-extension",
+  "destination": {
+    "type": "HTTP",
+    "url": "${ctpAdyenIntegrationBaseUrl}"
+  },
+  "triggers": [
+    {
+      "resourceTypeId": "payment",
+      "actions": ["Create", "Update"],
+      "condition": "paymentMethodInfo is defined AND paymentMethodInfo(paymentInterface is defined) AND paymentMethodInfo(paymentInterface=\"ctp-adyen-integration\")"
+    }
+  ],
+  "timeoutInMs": 10000
+}
